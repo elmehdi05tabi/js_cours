@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+  String Challenge
+  All Solutions Must Be In One Chain
+  You Can Use Concatenate
+*/
+
+let a = "Elzero Web School";
+
+// Include This Method In Your Solution [slice, charAt]
+console.log(a.slice(2,a.indexOf(a.charAt(7)))); // Zero
+
+// 8 H
+console.log(a.substr(-4,1).repeat(8)); // HHHHHHHH
+
+// Return Array
+console.log(a.substring(0,7).split()); // ["Elzero"]
+
+// Use Only "substr" Method + Template Literals In Your Solution
+console.log(a.substr(0,11)); // Elzero School
+
+// Solution Must Be Dynamic Because String May Changes
+console.log(a[0].toLowerCase()+a.substring(1,a.length-1).toUpperCase()+a.substr(-1)); // eLZERO WEB SCHOOl
+    </script>
+</body>
+</html>

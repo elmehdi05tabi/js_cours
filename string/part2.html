@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  String Methods
+  - indexOf(Value [Mand], Start [Opt] 0)
+  - lastIndexOf(Value [Mand], Start [Opt] Length)
+  - slice(Start [Mand], End [Opt] Not Include End)
+  - repeat(Times) [ES6]
+  - split(Separator [Opt], Limit [Opt])
+*/
+      // index of => si il ya le chain qui t'as recherche il-donne sa position sinon donne -1
+      let str = "elmehdi tabi scholl";
+      console.log(str.indexOf("tabi", 9));
+      //   lastIndexOf => il commance la calcule sur la fin
+      console.log(str.lastIndexOf("s"));
+      //   slice () =>
+      console.log(str.slice(7, 12)); // return tabi
+      list = ` 
+        <li>Homme</li>
+    `;
+      document.write(`
+    <ul>
+    ${list.repeat(4)}    
+    </ul>
+    `);
+    // split () 
+    console.log(str.split(" "))
+    </script>
+  </body>
+</html>

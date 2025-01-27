@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          /*
+          condition(ternary) operators
+          */
+         let name = "elmehdi";
+         let sex = "homme" ;
+         let age = 78 ;
+         if (sex === "homme") {
+          document.write("Mr")
+         } else if (sex === "famme") {
+          document.write("Ms")
+         }
+         let result = sex === "homme"  ? (` hello Mr ${name}`) : (`hello ${name}`)  ;
+      //    console.log(result) ;
+      age < 20 ? console.log(`hello ${name} vous avez sup de 20`) :
+      age >= 20 && age < 60  ? console.log(`hello ${name} vous etes entre 20 et 60`) :
+      age >= 60 ? console.log("tu as sinieure ") :
+      console.log("bonne soireé")
+    </script>
+  </body>
+</html>

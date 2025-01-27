@@ -16,7 +16,8 @@ ${c} ${d}`);
 
 var disc="elemhdi";
 var lName="tabi"
-let markup = ` <div class="card"> 
+let markup =
+ ` <div class="card"> 
        <div class="child" style="color:blue; font-size:25px"> elmehdi</div>
        <h2 style="display:inline;color:red">tabi</h2> 
        <div>${disc}</div>
