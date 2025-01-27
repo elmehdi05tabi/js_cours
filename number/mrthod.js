@@ -1,0 +1,23 @@
+/*
+Number Method 
+- Two Dots To Call A method 
+- toString()
+-toFixed()
+-parseInt()
+-parseFloat()
+-isInteger() [ES6]
+-isINaN() [ES6]
+*/
+
+console.log((100.55).toString()); // return sting 
+console.log((1050).toString());
+console.log(100..toString());            
+console.log((100.355255555).toFixed(2));  // retourn 2 number after (.)
+console.log(parseInt("100 elmehdi")); 
+console.log(parseInt("100.35 elmehdi")); 
+console.log(parseInt("tabu 100 elmehdi")); 
+console.log(parseFloat("100.22 elmehdi")); 
+console.log(Number.isInteger("hello si me")); // False 
+console.log(Number.isInteger(12)); // true 
+console.log(Number.isInteger(20.5));  // false 
+console.log(Number.isNaN(("elmehdi" / 20))); //true 
