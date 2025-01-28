@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Arrays Methods [Adding And Removing]
+  - unshift("", "") Add Element To The First
+  - push("", "") Add Element To The End
+  - shift() Remove First Element From Array
+  - pop() Remove Last Element From Array
+*/
+
+      let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
+      //  ajouter
+      console.log(myFriends);
+      myFriends.unshift("elmehdi");
+      console.log(myFriends);
+      myFriends.push("tabi");
+      console.log(myFriends);
+      // suprimer 
+      let first = myFriends.shift() ;
+      console.log(myFriends);
+      console.log(`la premier est ${first}`) ;
+      let last = myFriends.pop() ; 
+      console.log(myFriends) ; 
+      console.log(`la derinier est ${last}`) ; 
+    </script>
+  </body>
+</html>
