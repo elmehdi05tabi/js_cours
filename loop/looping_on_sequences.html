@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 6, "Ali"];
+      let newArray = [];
+      for (let i = 0; i < myFriends.length; i++) {
+        if (typeof myFriends[i] == "string") {
+          newArray.unshift(myFriends[i]);
+        }
+      }
+      console.log(newArray);
+      // console.log(myFriends[0]);
+      // console.log(myFriends[1]);
+      // console.log(myFriends[2]);
+      // console.log(myFriends[3]);
+      // console.log(myFriends[4]);
+
+      // for (let i = 0; i < myFriends.length; i++) {
+      //   console.log(myFriends[i]);
+      // }
+    </script>
+  </body>
+</html>

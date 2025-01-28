@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+      let colors = ["Red", "Green", "Blue"];
+      let showCount = parseInt(prompt("entre le nombre des produit : "));
+      document.write(`<h1>Vu ${showCount} Produit3</h1> `);
+      for (let i = 0; i < showCount; i++) {
+        document.write(`<div>`);
+        document.write(`<h3>${products[i]}</h3>`);
+        for(let j = 0 ; j <colors.length;j++) {
+            document.write(`<p>-${colors[j]}-</p>`)
+        }
+        document.write(colors.join("|"))
+        document.write(`</div>`);
+      }
+    </script>
+  </body>
+</html>

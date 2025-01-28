@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Loop Challenge
+*/
+
+      let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+      let myEmployees = [
+        "Amgad",
+        "Samah",
+        "Ameer",
+        "Omar",
+        "Othman",
+        "Amany",
+        "Samia",
+        "Anwar",
+      ];
+      let copmt = 0;
+      for (; copmt < myAdmins.length; ) {
+        if (myAdmins[copmt] === "Stop") {
+          break;
+        }
+        copmt++;
+      }
+      document.write(`<div>We Have ${copmt} Admins</div>`);
+      document.write(`<div>`);
+      for (let i = 0; i < copmt; i++) {
+        document.write("<hr>");
+        document.write(`The Admin For Team is ${myAdmins[i]}`);
+        document.write("<h3>Taem Member</h3>");
+        for (let j = 0; j < myEmployees.length; j++) {
+          if (myEmployees[j][0] === myAdmins[i][0]) {
+            document.write(`<p>[${j + 1}] ${myEmployees[j]}</p>`);
+          }
+        }
+      }
+      document.write(`</div>`);
+    </script>
+  </body>
+</html>

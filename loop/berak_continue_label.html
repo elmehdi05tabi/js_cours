@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+      let colors = ["Red", "Green", "Black"];
+      mainloop:for (let i = 0; i < products.length; i++) {
+        console.log(products[i]);
+        nestedloop:for (let j = 0; j < products.length; j++) {
+            console.log(`- ${colors[j]} -`)
+            if (colors[j]==="Green") {
+                break mainloop ;
+            }
+        }
+      }
+    </script>
+  </body>
+</html>
