@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Function
+  - Function Inside Function
+  - Return Function
+*/
+      // Example 1 :
+
+      function symessag(fname, lname) {
+        let message = `hello`;
+        // Nested fucntion
+        function conct() {
+          message = `${message} ${fname} ${lname}`;
+        }
+        conct();
+        return message;
+      }
+      console.log(symessag("elmehdi", "tabi"));
+      console.log("#".repeat(15));
+      //   Example 2 :
+      function symessag2(fname, lname) {
+        let message = `hello`;
+        // Nested fucntion
+        function conct() {
+          return `${message} ${fname} ${lname}`;
+        }
+        conct();
+        return conct();
+      }
+      console.log(symessag3("Hassan", "Amir"));
+      console.log("#".repeat(15));
+      //   Example 3 :
+      function symessag3(fname, lname) {
+        let message = `hello`;
+        // Nested fucntion
+        function conct() {
+            // Nested Fuction 2 
+            function getfulnam() {
+                return `${fname} ${lname}` ; 
+            }
+          return `${message} ${getfulnam()}`;
+        }
+        conct();
+        return conct();
+      }
+      console.log(symessag3("brahim", "donne"));
+      console.log("#".repeat(15));
+    </script>
+  </body>
+</html>

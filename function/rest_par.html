@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Function 
+        -Rest Parametres 
+        -Only One Allowed
+        -Must Be Last Element
+        */
+      function calc(...number) {
+        // console.log(Array.isArray(number))
+        let result = 0;
+        for (let i = 0; i < number.length; i++) {
+        //  console.log(number[i])
+          result+=number[i]
+        }
+        return `final result is ${result}` ; 
+      }
+      console.log(calc(10,20,30,40,20))
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayhello(usernam,age) {
+            // console.log(`hello ${usernam} you aga  is ${age}`) ; 
+            if (age <20) {
+                console.log("app is not for yu")
+            }else {
+            console.log(`hello ${usernam} you aga  is ${age}`) ; 
+            }
+        }
+        sayhello("Brahim",66) ;
+        sayhello("hassan",40) ;
+        sayhello("elmehdi",19) ;
+
+        function yeaes (start ,end,excloud) {
+             for(let i = start ; i <= end ; i++) {
+                if(i===excloud) {
+                    continue ; 
+                }
+                console.log(i)
+             }
+        }
+        yeaes(2005,2025,2020) ; 
+    </script>
+</body>
+</html>

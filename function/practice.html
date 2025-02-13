@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Fucntion Advanced Practice 
+        - Parametres
+        -Default
+        -Rest 
+        -Loop
+        -Condition 
+        */
+      function shoinfo(us = "Un", age = "Un", rt = 0, show = "Yes", ...skills) {
+        document.write(`<div>`);
+        document.write(`<h2>Welcom ${us}</h2>`);
+        document.write(`<p>Your age is  ${age}<p>`);
+        document.write(`<p>Hour Rat is  $${rt}<p>`);
+        if (show === "Yes") {
+          if (skills.length > 0) {
+            document.write(`<p>${skills.join(" | ")}</p>`);
+          } else {
+            document.write(`<p>competence: vide</p>`);
+          }
+        } else {
+          document.write(`<p>competence est cachée</p>`);
+        }
+        document.write(`</div>`);
+      }
+      shoinfo("Elmehdi", 19, 200, "NO", "Html", "Css", "JavaScript");
+    </script>
+  </body>
+</html>

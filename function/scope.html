@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        scope 
+        - Global And Local scope 
+        */
+      /*
+  Scope
+  - Global And Local Scope
+*/
+
+      var a = 1;
+      let b = 2;
+
+      function showText() {
+        var a = 10;
+        let b = 20;
+        console.log(`Function - From Local ${a}`);
+        console.log(`Function - From Local ${b}`);
+      }
+
+      console.log(`From Global ${a}`);
+      console.log(`From Global ${b}`);
+
+      showText();
+    </script>
+  </body>
+</html>
