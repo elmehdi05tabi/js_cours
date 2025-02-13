@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Filter
+  - Filter Longest Word By Number
+*/
+
+      // Filter Words More Than 4 Characters
+      let sentence = "I Love Foood Code Too Playing Much";
+      let Characters = sentence
+        .split(" ")
+        .filter(function (el) {
+          return el.length <= 4;
+        })
+        .join(" ");
+      console.log(Characters);
+      //   ignorer les nombres
+      let ignoreNumbers = "Elz123er4o";
+      let ign = ignoreNumbers
+        .split("")
+        .filter(function (el) {
+          return isNaN(parseInt(el));
+        })
+        .join("");
+      console.log(ign);
+      // Filter Strings + Multiply
+      let mix = "A13BS2ZX";
+      let multiply = mix.split("").filter(
+        function (elm) {
+            return !isNaN(parseInt(elm)) ; 
+        }
+      ).map((el)=>el*el).join("") 
+      console.log(multiply) ; 
+    </script>
+  </body>
+</html>

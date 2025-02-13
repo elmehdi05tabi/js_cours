@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Reduce
+  - Longest Word
+  - Remove Characters + Use Reduce
+*/
+      //  Method 1 :
+      let theBiggest = [
+        "Bla",
+        "Propaganda",
+        "Other",
+        "AAA",
+        "Battery",
+        "Test",
+        "Propaganda_Two",
+      ];
+      let long = theBiggest.map(function (el) {
+        return el.length;
+      });
+      let bist = theBiggest
+        .filter(function (elm) {
+          return elm.length >= Math.max(...long);
+        })
+        .join("");
+      console.log(bist);
+      // methdo 2 :
+      let check = theBiggest.reduce(function (acc, current) {
+        console.log(`accumelater ${acc}`);
+        console.log(`current ${current}`);
+        console.log("#".repeat(15));
+        return acc.length > current.length ? acc : current;
+      });
+      console.log(check);
+
+    //    remove carract : 
+      let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+      let removeat = removeChars.filter((el)=> el!=="@")
+      .reduce(
+        function(accumelater , current ) {
+            return accumelater+current ; 
+        }
+      ).toLowerCase(); 
+      console.log(removeat) ; 
+    </script>
+  </body>
+</html>

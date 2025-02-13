@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+  Map
+  - Swap Cases
+  - Inverted Numbers
+  - Ignore Boolean Value
+*/
+
+let swappingCases = "elZERo";
+let invertedNumbers = [1, -10, -20, 15, 100, -30];
+let ignoreNumbers = "Elz123er4o";
+// Example 2 
+let sw = swappingCases.split("").map(function(el){
+    return el === el.toUpperCase() ? el.toLowerCase() :  el.toUpperCase()  
+}).join("")
+console.log(sw)
+// Example 1 
+let inv = invertedNumbers.map(elm => - elm) ; 
+console.log(inv) ; 
+// Example 3 
+let ign = ignoreNumbers.split("").map(
+  function (el) {
+      if (isNaN(+el)) {
+        return el ; 
+      }
+    }
+).join("")
+console.log(ign) ; 
+</script>
+</body>
+</html>
