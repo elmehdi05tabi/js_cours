@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+  Object
+  - Create Object With Assign Method
+*/
+
+let obj1 = {
+  prop1: 1,
+  meth1: function () {
+    return this.prop1;
+  },
+};
+
+let obj2 = {
+  prop2: 2,
+  meth2: function () {
+    return this.prop2;
+  },
+};
+
+let targetObject = {
+  prop1: 100,
+  prop3: 3,
+};
+let finalobject = Object.assign(targetObject,obj1,obj2) ; 
+console.log(finalobject) ; 
+console.log(finalobject.meth1()) ; 
+let newobj = Object.assign({},obj1,{prorp4:100}) ; 
+newobj.prop1 = 50 ;
+console.log(newobj)
+    </script>
+</body>
+</html>

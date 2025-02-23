@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+  Object
+  - Create Object With Create Method
+*/
+let user = {
+    age : 20 , 
+    agedouble : function () {
+        return this.age * 2 
+    } ,
+}
+console.log(user.age) ; 
+console.log(user.agedouble()) ;
+let copobj = Object.create(user) ; 
+console.log(copobj) ; 
+copobj.age = 60 ; 
+console.log(copobj.age) ; 
+console.log(copobj.agedouble()) ;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Object
+  - Nested Object And Trainings
+*/ 
+      let traviall = true ; 
+      let user = {
+        name: "Elmehdi",
+        age: 20,
+        skills: ["Html", "Js", "Python"],
+        traviall: false,
+        address: {
+          usa: "NewYork",
+          Moroco: {
+            one: "settet",
+            two: "casablaca",
+          },
+        },
+        test: function () {
+          if (traviall === true) {
+            return "Tu as bonne homme";
+          } else {
+            return "le travaill c'est la vie mon freere";
+          }
+        },
+      };
+      console.log(user.name) ; 
+      console.log(user.age) ;
+      console.log(user.skills.join(" | ")) ; 
+      console.log(user.skills[2]) ;  
+      console.log(user.address) ; 
+      console.log(user.address.usa) ; 
+      console.log(user.address.Moroco.one) ; 
+      console.log(user.address.Moroco.two) ;
+      console.log(user["address"].Moroco["one"]) ;
+      console.log(user.test())
+      </script>
+  </body>
+</html>
