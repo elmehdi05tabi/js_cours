@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        DOM [Create Elemente]
+        -Practice Producte With Headin  And Paragraphe
+        */
+      for (let i = 1; i < 101; i++) {
+        let mainElment = document.createElement("div");
+        let myTitle = document.createElement("h2");
+        let myParagraphe = document.createElement("p");
+        //  ajouter le contonu des elements
+        let myTitletext = document.createTextNode(`Title Product ${i}`);
+        let myParagrapheText = document.createTextNode(
+          ` content Product ${i}`
+        );
+        //    ajouter le text sur elment
+        myTitle.appendChild(myTitletext);
+        myParagraphe.appendChild(myParagrapheText);
+        // ajouter title et paragraphe sur le main div
+        myTitle.style.color = "green" ; 
+        myTitle.style.fontWeight = "bold" ;  
+        myParagraphe.style.color = "aqua" ; 
+        myParagraphe.style.fontSize = "30px" ;  
+        mainElment.appendChild(myTitle);
+        mainElment.appendChild(myParagraphe);
+        // ajouter main elment dans body
+
+        document.body.appendChild(mainElment);
+
+      }
+    </script>
+  </body>
+</html>

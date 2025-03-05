@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="js">javascript <span>DIV</span> &lt;span&gt;</div>
+    <img src="" alt="" />
+    <a href="#" class="link">gooo</a>
+    <script>
+      /*
+  DOM [Get / Set Elements Content And Attributes]
+  - innerHTML
+  - textContent
+  - Change Attributes Directly
+  - Change Attributes With Methods
+  --- getAttribute
+  --- setAttribute
+
+  Search
+  - innerText
+*/
+      let myElemnt = document.querySelector(".js");
+      console.log(myElemnt.innerHTML);
+      console.log(myElemnt.textContent);
+      myElemnt.innerHTML = "hello <div>hi</div> bonne courage";
+      console.log(myElemnt.textContent);
+      myElemnt.textContent = "hello <div>hi</div> bonne courage";
+      console.log(myElemnt.textContent);
+      // avec set et get
+      console.log(myElemnt.getAttribute("class"));
+      console.log(myElemnt.getAttribute("id"));
+      let mylinks = document.querySelector(".link")
+      mylinks.setAttribute("href","https:x.com") ; 
+      document.images[0].src = "gg" ;  
+      document.images[0].title = "c'est test" ;  
+      document.images[0].id = "image" ;  
+      document.images[0].className = "magnifique" ;  
+      </script>
+  </body>
+  </html>

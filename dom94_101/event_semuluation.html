@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="n1" >
+        <input type="text" name="n2" >
+        <input type="text" name="n3" >
+        <input type="text" name="n4" >
+        <input type="text" name="n5" >
+        <input type="text" name="n6" >
+        <a href="https://www.google.com">Google</a>
+    </form>
+    <script>
+        /*
+        DOM [event sumulation]
+        click 
+        focus
+        onblur
+        */
+       let number = document.querySelectorAll("[type='text']") ; 
+       for (let i = 0 ; i<number.length ;i++) {
+        number[i].style.width = '20px' ; 
+        window.onload = function () {
+            number[0].focus() ; 
+        }
+       }
+       number[0].onblur() = function () {
+        document.links[0].click() ; 
+       }
+    </script>
+</body>
+</html>

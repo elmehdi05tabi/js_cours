@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="dd">Passée Un Belle Journée Car C'est Ramadan</div>
+    <script>
+      let element = document.getElementById("dd");
+      element.style.color = 'red' ; 
+      element.style.fontWeight = 'bold' ; 
+      element.style.cssText = "border-bottom : solid 1px green ; opacity : 0.9 ; color:red" ; 
+      element.style.removeProperty("color") ;    
+      element.style.setProperty("background",'red') ; 
+      document.styleSheets[0].rules[0].style.removeProperty("font-size") ; 
+      document.styleSheets[0].rules[0].style.setProperty("border-radius","6px") ; 
+      document.styleSheets[0].rules[0].style.setProperty("box-shadow","5px 5px 5px") ; 
+      element.style.width = 'fit-content'; 
+      element.style.margin = 'auto' ; 
+    </script>
+  </body>
+</html>

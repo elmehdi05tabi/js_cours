@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="tb" class="one two sho three bonjour">magnifique jour c'est Ramadan</div>
+    <script>
+      /*
+  DOM [Class List]
+  - classList
+  --- length
+  --- contains
+  --- item(index)
+  --- add
+  --- remove
+  --- toggle
+*/
+let mydiv = document.getElementById("tb") ; 
+console.log(mydiv.classList) ; 
+console.log(mydiv.classList.length) ; 
+console.log(mydiv.classList.contains("one")) ;
+console.log(mydiv.classList.contains("elmehdi")) ;
+console.log(mydiv.classList.item('4'))  ; 
+//  testing 
+// mydiv.onclick    = function () {
+//     mydiv.classList.remove("one","two") ; 
+// }
+// mydiv.onclick    = function () {
+//     mydiv.classList.add("add-one","add-two") ; 
+// }
+mydiv.onclick = function () {
+    mydiv.classList.toggle("halla") ; 
+}
+
+    </script>
+  </body>
+</html>

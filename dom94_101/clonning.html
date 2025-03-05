@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp" class="he">hello <span>word</span></p>
+    <div>
+        la vaie c'est difficile si tu veux changer ta vai la dicipline c'est la souliton  
+    </div>
+    <script>
+/*
+  Dom 
+  CloneNode ()
+*/
+let myParagraphe = document.getElementById('myp').cloneNode(true) ; 
+let mydiv = document.querySelector("div") ;
+myParagraphe.id = `${myParagraphe.id}-clone` ; 
+mydiv.appendChild(myParagraphe) ; 
+    </script>
+</body>
+</html>

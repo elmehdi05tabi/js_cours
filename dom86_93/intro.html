@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn javascript</title>
+  </head>
+  <body>
+    <span class="my-span option">My span1</span>
+    <span class="my-span">My span2</span>
+    <p>hello paragraphe 1 </p>
+    <p>hello paragaraphe 2</p>
+    <div id="my-div">hello div</div>
+    <form action="">
+        <input type="text" name="one" value="hello">
+    </form>
+    <form action="">
+        <input type="text" name="two" id="" value="hello">
+    </form>
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.facebook.com">facebook</a>
+    <script>
+      /*
+  DOM
+  - What Is DOM
+  - DOM Selectors
+  --- Find Element By ID
+  --- Find Element By Tag Name
+  --- Find Element By Class Name
+  --- Find Element By CSS Selectors
+  --- Find Element By Collection
+  ------ title
+  ------ body
+  ------ images
+  ------ forms
+  ------ links
+*/
+
+let myElmentId = document.getElementById("my-div") ; 
+let myTageName = document.getElementsByTagName("p") ; 
+let myClasses = document.getElementsByClassName("my-span") ; 
+let myquery  = document.querySelector(".option") ; 
+console.log(myElmentId) ; 
+console.log(myTageName[1]) ; 
+console.log(myClasses) ; 
+console.log(myquery) ; 
+console.log(document.body) ; 
+console.log(document.forms[1].two.value) ; 
+console.log(document.links[1].href)
+console.log(document.title)  
+</script>
+  </body>
+</html>

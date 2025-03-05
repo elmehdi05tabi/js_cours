@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="my-div">bonjour comment <span>vas-tu</span></div>
+    <script>
+      /*
+  DOM [Deal With Elements]
+  - before [Element || String]
+  - after [Element || String]
+  - append [Element || String]
+  - prepend [Element || String]
+  - remove
+*/
+      let myElemnt = document.getElementById("my-div");
+      let creatParagraphe = document.createElement("p");
+      myElemnt.before(creatParagraphe);
+      myElemnt.after("أستغفر الله");
+      myElemnt.append(creatParagraphe) ; 
+      myElemnt.prepend("Ta rah Harba") ; 
+      myElemnt.remove() ; 
+    </script>
+  </body>
+</html>
