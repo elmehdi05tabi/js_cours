@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .conatiner{
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .form{
+            display: flex ;
+            justify-content: center;
+            gap: 20px;
+        }
+        .form input[type="text"]{
+            background-color: #ccc;
+            border: none;
+            padding: 10px 100px ;
+        }
+        .form input[type="submit"]{
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: none;
+        }
+        .task{
+            margin: 20px;
+            background-color: #ccc;
+            padding: 20px;
+        } 
+    </style>
+  </head>
+  <div class="conatiner">
+    <div class="form">
+      <input type="text" class="input" />
+      <input type="submit" class="add" value="Add Task" />
+    </div>
+    <div class="task"></div>
+  </div>
+  <body>
+    <script src="chalange.js"></script>
+  </body>
+</html>

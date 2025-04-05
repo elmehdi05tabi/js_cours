@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+          display: flex;
+          justify-self: center  ; 
+          align-items: center;
+          height: 100vh;
+          font-weight: bold;
+          font-size: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>10</div>
+    <script>
+      /*
+  BOM [Browser Object Model]
+  - setInterval(Function, Millseconds, Additional Params)
+  - clearInterval(Identifier)
+*/
+      // setInterval(function(){
+      //     console.log('hello') ;
+      // },1000) ;
+
+      //     console.log(`hello ${user} you age is${age}`)
+      // }
+      // setInterval(sayhello,1000,"elmehdi" ,20) ;
+
+
+    let div = document.querySelector("div") ; 
+    function moinune(){
+        div.innerHTML-=1 ; 
+        if (div.innerHTML==='0'){
+            clearInterval(interval) ; 
+        }
+    }
+    let interval = setInterval(moinune,1000) ; 
+    //  stoper 
+    </script>
+  </body>
+</html>

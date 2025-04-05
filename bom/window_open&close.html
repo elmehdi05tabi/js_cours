@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  BOM [Browser Object Model]
+  Local Storage
+  - setItem
+  - getItem
+  - removeItem
+  - clear
+  - key
+
+  Info
+  - No Expiration Time
+  - HTTP And HTTPS
+  - Private Tab
+*/
+// setItem 
+window.localStorage.setItem("color","red") ; 
+window.localStorage.fontWeight = "bold" ;
+window.localStorage["fontSize"] = "20px" ;
+// getItem 
+console.log(window.localStorage.getItem("color")) ; 
+console.log(window.localStorage.fontWeight) ; 
+console.log(window.localStorage["fontSize"]) ; 
+
+document.body.style.backgroundColor = window.localStorage.getItem("color") ; 
+// removeItem One 
+window.localStorage.removeItem("color") ; 
+// removeItem All 
+// window.localStorage.clear() ; 
+    </script>
+  </body>
+</html>

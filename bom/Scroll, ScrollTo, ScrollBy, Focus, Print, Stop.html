@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 5000px;
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <button>Scroll</button>
+  <body>
+    <script>
+      /*
+        BOM [Browser Object Model]
+        - stop()
+        - print()
+        - focus()
+        - scrollTo(x, y || Options)
+        - scroll(x, y || Options)
+        - scrollBy(x, y || Options)
+      */
+    //   let myNewWindow = window.open(
+    //     "https://google.com",
+    //     "",
+    //     "width=500,height=500"
+    //   );
+      let bnt = document.querySelector("button");
+      bnt.onclick = function(){
+        window.scrollBy(
+            {
+                top : 500 ,
+                left:500,
+                behavior : "smooth"
+            }
+        )
+      }
+    </script>
+  </body>
+</html>
