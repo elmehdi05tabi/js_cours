@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        theName: "Elemhdi",
+        theAge: 20,
+        skills: {
+          html: 70,
+          css: 80,
+        },
+      };
+      showDetails(user) ; 
+    //   function showDetails(obj) {
+    //     console.log(obj.theName) ; 
+    //     console.log(obj.theAge) ; 
+    //     console.log(`Vous Comptitance En Css Est  ${obj.skills.css}`) ; 
+    //   }
+      function showDetails({theName:n,theAge:a,skills:{css:c}}=user) {
+        console.log(a) ; 
+        console.log(n) ; 
+        console.log(`Vous Comptitance En Css Est  ${c}`) ; 
+      }
+    </script>
+  </body>
+</html>

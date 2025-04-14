@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Destructuring
+  - Destructuring Mixed Content
+*/
+const user = {
+    theName : "Elmehdi" ,
+    theAge : 20 ,
+    skills : ["Html","Css","JavaScript"] ,
+    addreses : {
+        egybt : "cairo",
+        ksa : 'Riyad',
+    },
+}
+const {
+    theName :n,
+    theAge:a,
+    skills : [,,three],
+    addreses :{egybt:e},
+} = user ; 
+console.log(`The Name Is :${n}`) ; 
+console.log(`The Age Is :${a}`) ; 
+console.log(`The Last Skills Is :${three}`) ; 
+console.log(`The Address In Egybt  Is :${e}`) ; 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+  Destructuring
+  - Destructuring Array => Swapping Variables
+*/
+let book =  "video" ; 
+let video =  "book" ;
+//  Save book value in stash 
+let stash = book ; 
+// change book value
+book = video ; //book
+// change video value
+video = stash ; //vedio
+[book,video] = [book,video] ; 
+console.log(book) ;  
+console.log(video) ;  
+    </script>
+</body>
+</html>

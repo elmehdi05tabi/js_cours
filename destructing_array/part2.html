@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Destructuring
+  - Destructuring Array Advanced Examples
+*/
+      let myfrends = [
+        "elmehdi",
+        "Tabi",
+        "Brahim",
+        ["Asmae", "Youness", ["Ismail", "Yassine"]],
+      ];
+      // let [a,b,c,d] =myfrends ;
+      // let [x,z,y] =d ;
+      // let [v,h] = y ;
+      let [, , , [a, , [, b]]] = myfrends;
+      console.log(a); // Asmae
+      console.log(b); //Yassine
+    </script>
+  </body>
+</html>

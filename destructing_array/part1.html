@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Destructuring
+  " is a JavaScript expression that allows us to extract data from arrays,
+    objects, and maps and set them into new, distinct variables. "
+  - Destructuring Array
+*/
+let a = 1 ; 
+let b = 2 ; 
+let c = 3 ; 
+let d = 4 ; 
+let mesAmis = ["Ahmed","Ibrahim","Elmehdi","Tabi"] ; 
+[a="a",b,c,d,e="Osama"] = mesAmis ; 
+console.log(a) ; 
+console.log(b) ; 
+console.log(c) ; 
+console.log(d) ; 
+console.log(e) ; 
+//  autre var 
+let [,y,,z] = mesAmis ; 
+console.log(y) ; 
+console.log(z) ; 
+    </script>
+  </body>
+</html>
