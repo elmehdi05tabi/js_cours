@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Destructuring
+  - Destructuring Object
+  --- Naming The Variables
+  --- Add New Property
+  --- Nested Object
+  --- Destructuring The Nested Object Only
+*/
+      const user = {
+        theName: "Elemhdi",
+        theAge: 20,
+        theTitle: "Developer",
+        theCountry: "Morocco",
+        theColor: "black",
+        skills: {
+          html: 70,
+          css: 80,
+        },
+      };
+      const { theName: n, theAge: a, theCountry, theColor: co = "red",skills:{html:h,css} } = user;
+      console.log(n);
+      console.log(a);
+      console.log(theCountry);
+      console.log(co);
+      console.log(`My Html Skill Progress Is ${h} `);
+      console.log(`My Css Skill Progress Is ${css} `);
+      const {html:skillOne,css:skillTwo} = user.skills ; 
+      console.log(co);
+      console.log(`My Html Skill Progress Is ${skillOne+5} `);
+      console.log(`My Css Skill Progress Is ${skillTwo+8} `);
+    </script>
+  </body>
+</html>

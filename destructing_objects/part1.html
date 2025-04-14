@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+  Destructuring
+  - Destructuring Object
+*/
+const user = {
+    theName : "Elemhdi",
+    theAge : 20,
+    theTitle : "Developer",
+    theCountry : "Morocco"
+}
+// let theName = user.theName ;
+// let theAge = user.theAge ;
+// let theTitle = user.theTitle ;
+// let theCountry = user.theCountry ;
+console.log(user.theName) ; 
+console.log(user.theAge) ; 
+console.log(user.theTitle) ; 
+console.log(user.theCountry) ; 
+// ( {theName,theAge,theTitle,theCountry} = user ); 
+const {theName,theAge,theCountry} = user ; 
+console.log(theName) ; 
+console.log(theAge) ; 
+console.log(theCountry) ; 
+    </script>
+  </body>
+</html>
