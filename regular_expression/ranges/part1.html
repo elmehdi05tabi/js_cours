@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+  Regular Expression
+
+  Ranges
+
+  - Part 1
+  (X|Y) => X Or Y
+  [0-9] => 0 To 9
+  [^0-9] => Any Character Not 0 To 9
+  Practice
+*/
+// (X|Y)
+let tld = "com org fr info code " ; 
+let regtld =  /(info|fr|info)/ig ; 
+console.log(tld.match(regtld));
+//  [0-9]
+let nums = "12345678910"; 
+let regnums = /[0-2]/g ; 
+console.log(nums.match(regnums)) ; 
+// [^0-9]
+let notNums = "12345678910"; 
+let regNotNums = /[^0-2]/g ; 
+console.log(notNums.match(regNotNums)) ; 
+let spc = "12!45#558@5?" ; 
+let regspc = /[^0-9]/ig ; 
+console.log(spc.match(regspc)) ; 
+// Practice
+let practice ="Os1 Os1Os Os2 Os8 Os8Os"; ; 
+let regPractice = /os[5-9]os/ig ;
+console.log(practice.match(regPractice)) ;   
+    </script>
+</body>
+</html>

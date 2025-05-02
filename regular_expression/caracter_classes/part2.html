@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Regular Expression
+      Character Classes
+      \b => matches at the beginning or end of a word.
+      \B => matches NOT at the beginning/end of a word.
+    
+      Test Method
+      pattern.test(input)
+    */
+
+    let names = "Sayed 1Spam 2Spam 3Spam Spam4 Spam5 Osama Ahmed Aspamo";
+    // let re = /\bspam/ig;
+    // let re = /spam\b/ig;
+    let re = /(\bspam|spam\b)/ig;
+    console.log(names.match(re));  
+    // test Method
+    console.log(re.test(names)) ; 
+    console.log(re.test("Elmehdi")) ; 
+    console.log(/(\bspam|\bspam)/ig.test("spam")) ; 
+    </script>
+</body>
+</html>

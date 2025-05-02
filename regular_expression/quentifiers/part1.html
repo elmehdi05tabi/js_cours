@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Regular Expression
+    
+      Quantifiers
+      n+    => One Or More
+      n*    => zero or more
+      n?    => zero or one
+    */
+//     +
+   let mails = "o@nn.sa osama@gmail.com elzero@gmail.net osama@mail.ru"; // All Emails  
+   let mail = /\w+@\w+.(com|net)/ig ;
+   console.log(mails.match(mail)) ; 
+//    * 
+    let nums = "0110 10 150 05120 0560 350 00"; // 0 Numbers Or No 0
+    let num = /0\d*0/g ; 
+    console.log(nums.match(num)) ; 
+    // ?
+    let urls = "https://google.com http://www.website.net web.com"; // http + https
+    let url = /https?:\/\/(www.)?\w+.(com|net)/ig ; 
+    console.log(urls.match(url)) ; 
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Regular Expression
+    
+      Quantifiers
+      n{x}   => Number of
+      n{x,y} => Range
+      n{x,}  => At Least x
+    */
+
+            let serials = "S100S S3000S S50000S S950000S";
+            console.log(serials.match(/s\d{3}S/ig)) ; 
+            console.log(serials.match(/s\d{4,5}S/ig)) ; 
+            console.log(serials.match(/s\d{5,}S/ig)) ; 
+    </script>
+</body>
+</html>
