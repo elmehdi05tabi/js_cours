@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Constructor Function
+      - Update Properties
+      - Built In Constructors
+    */
+
+            class User {
+                constructor(id, username, salary) {
+                    this.i = id;
+                    this.u = username;
+                    this.s = salary;
+                }
+                updateNom(newName) {
+                    this.u = newName  ;
+                    } 
+            }
+            let userOne = new User(100, "Elzero", 5000);
+                console.log(userOne.u);
+                userOne.updateNom("Elmehdi") ; 
+                console.log(userOne.u);
+            strOne = "Elmehdi" ; 
+            strTwo = new String("Elmehdi") ; 
+            console.log(typeof strOne) ; 
+            console.log(typeof strTwo) ;
+            // test de instantion
+            console.log(strOne instanceof String) ;  
+            console.log(strTwo instanceof String) ; 
+            // test de constucor
+           console.log(strOne.constructor === String);
+            console.log(strTwo.constructor === String);
+
+    </script>
+</body>
+</html>

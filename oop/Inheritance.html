@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Class
+      - Inheritance
+    */
+//    class Parent
+   class User {
+    constructor(id,name) {
+        this.i = id ;
+        this.n = name;
+    }
+    sayHello(){
+        return `Bonjour Monsiuer ${this.n}` ;
+    }
+   }
+   //    Crée un classe qui hériter de la class Parent
+   class Admin extends User {
+    constructor (id,name,peremssion){
+        super(id,name) ;
+        this.p  = peremssion ;
+    }
+   }
+   let user1 = new User(100,"Elmehdi") ;
+   console.log(user1.sayHello()) ; 
+   console.log("#".repeat(15)) ;
+    // crée l'objet de admin
+    let admin1 = new Admin(110,"Tabi",1) 
+    console.log(admin1.sayHello()) ;  
+    </script>
+</body>
+</html>

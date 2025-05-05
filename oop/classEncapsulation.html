@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Encapsulation
+      - Class Fields Are Public By Default
+      - Guards The Data Against Illegal Access.
+      - Helps To Achieve The Target Without Revealing Its Complex Details.
+      - Will Reduce Human Errors.
+      - Make The App More Flexible And Manageable.
+      - Simplifies The App.
+    */
+   class User {
+    #s;
+    constructor(id,name,s) {
+        this.i = id;    
+        this.n = name;    
+        this.#s = s;    
+    }
+    getSalaire(){
+        return this.#s ; 
+    }
+   }
+   class Admin extends User {
+    constructor (id,name,s,prommession) {
+        super(id,name,s) ; 
+        this.p = prommession ; 
+    }
+   }
+   let user1 = new User(100,"Elmehdi",1500);
+   console.log(user1.getSalaire()*100);
+   let admin1 = new Admin(110,"Tabi",1000,1);
+   console.log(user1.getSalaire()*100);
+    </script>
+</body>
+</html>

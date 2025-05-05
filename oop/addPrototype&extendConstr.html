@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Prototype
+      - Add To Prototype Chain
+      - Extend Built In Constructors Features
+    */
+
+            class User {
+                constructor(id, username) {
+                    this.i = id;
+                    this.u = username;
+                }
+                sayHello() {
+                    return `Hello ${this.u}`;
+                }
+            }
+
+            let userOne = new User(100, "Elzero");
+            console.log(userOne.u);
+            console.log(User.prototype);
+            User.prototype.sayWelcom = function (){
+                return "Welcom"+this.u ; 
+            } ; 
+            Object.prototype.love = "J'aime Moi-Meme" ; 
+            String.prototype.addDotBeforeAndAfter = function (val) {
+                    return `.${this}.`;
+            };
+            let nom = "Elmehdi";  
+    </script>
+</body>
+</html>

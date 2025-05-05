@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+      Constructor Function
+      - Deal With Properties And Methods
+    */
+       class user {
+            constructor(id, userName, salire) {
+            // Properties
+                this.i = id;
+                this.u = userName || "Rien";
+                this.s = salire < 6000 ? salire + 500 : salire;
+                this.msg = function () {
+                    return `hello ${this.u} Your Saiare is ${this.s}` ; 
+                }
+            }
+            // Methode
+            afficherMessage() {
+                return `hello ${this.u} Your Saiare is ${this.s}` ; 
+            }
+        }
+        let user1 = new user(100, "Elmehdi", 5000);
+        console.log(user1.i);
+        console.log(user1.u);
+        console.log(user1.s);
+        console.log(user1.msg());
+        console.log(user1.afficherMessage());
+        let user2 = new user(101, "", 6000);
+        console.log(user2.i);
+        console.log(user2.u);
+        console.log(user2.s);
+        console.log(user2.msg);
+        console.log(user2.afficherMessage);
+    </script>
+</body>
+</html>

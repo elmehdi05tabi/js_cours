@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myObject = {
+                a: 1,
+                b: 2
+        }
+        Object.defineProperties(myObject,{
+            c : {
+                configurable : true ,
+                value : 3,
+            } ,
+            d : {
+                configurable : true ,
+                value : 3,
+            } ,
+            e : {
+                configurable : true ,
+                value : 5
+            }
+        }) 
+        console.log(myObject) ;
+        console.log(Object.getOwnPropertyDescriptor(myObject,"c")) ; 
+        console.log(Object.getOwnPropertyDescriptors(myObject)) ; 
+    </script>
+</body>
+</html>

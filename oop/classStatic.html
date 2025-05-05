@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Class
+      - Static Properties And Methods
+      Une méthode statique est une fonction définie dans une
+       classe qui peut être appelée sans créer d'objet de cette classe.
+    */
+   class User {
+    // static Propértier 
+    static c = 0 ; 
+    constructor(id,nom,salaire) {
+        this.i  = id ;
+        this.n  = nom ;
+        this.s  = salaire;
+        User.c++ ; 
+    }
+    // static Method
+    static Afficher () {
+        return "De Statique Method" ; 
+    }
+    static compte(){
+        return `le Nombre Des Object Est :${User.c}` ; 
+    }
+   }
+   let user1 = new User(100,"Elmehdi",1000) ; 
+   let user2 = new User(101,"Mohamed",2000) ; 
+    console.log(user1.i);
+    console.log(user1.n);
+    console.log(user1.s);
+    // afficher static Prepértier
+    console.log(user1.c);
+    // afficher static Methode
+    console.log(User.Afficher()) ;
+    // Afficher Le Nombre Des Object*
+    console.log(User.compte()) ;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Countsruct fucntion New stynatxe
+        */
+       class user {
+        constructor(id,userName,salire){
+            this.i = id ; 
+            this.u = userName ; 
+            this.s = salire ; 
+        }
+       }
+       let user1 = new user(100,"Elmehdi",1000);
+       console.log(user1.i) ; 
+       console.log(user1.u) ; 
+       console.log(user1.s);
+       user1 instanceof user ? console.log("C'est Vrai") : console.log("c'est Faux") ;  
+    </script>
+</body>
+</html>

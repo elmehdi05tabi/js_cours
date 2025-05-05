@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Object Meta Data And Descriptor
+      - writable
+      - enumerable
+      - configurable [Cannot Delete Or Reconfigure]
+    */
+   const myObject = {
+    a : 1,
+    b : 2
+   }
+   Object.defineProperty(myObject,"c",{
+    writable : false ,
+    enumerable : false,
+    configurable : true,
+    value : 3
+   }) ;
+   myObject.c = 100; 
+   for(proto in myObject){
+       console.log(proto+':'+myObject[proto]) ; 
+    }
+    console.log(delete myObject.c)  ;
+    console.log(myObject);
+    Object.defineProperty(myObject,"c",{
+        writable : true,
+        enumerable:true,
+        configurable : true ,
+        value : 200
+    })
+    console.log(myObject);
+    </script>
+</body>
+</html>
