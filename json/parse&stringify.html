@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      JSON
+      - JSON.parse => Convert Text Data To JS Object
+      - JSON.stringify => Convert JS Object To JSON
+    */
+//    Get From Server 
+const myObjectFromServer = '{"username":"Elmehdi","age":"20"}';
+console.log(typeof myObjectFromServer) ;
+console.log(myObjectFromServer) ;
+// convert to js object
+const myObject = JSON.parse(myObjectFromServer) ;
+console.log( typeof myObject) ;
+console.log(myObject) ;
+// update date
+myObject["username"] = "tabi" ;
+myObject["age"] = "21" ;
+// convert js object to Json
+const myObjectFromToServer = JSON.stringify(myObject) ; 
+console.log(typeof myObjectFromToServer) ; 
+console.log(myObjectFromToServer) ; 
+</script>
+</body>
+</html>

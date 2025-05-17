@@ -1,0 +1,12 @@
+{
+    "nom":"elmehdi",
+    "prenom":"tabi",
+    "age":20,
+    "address" :{
+        "morrroco" : "settat",
+        "france"  : "paris"
+    },
+    "skills" : ["HTML","CSS","JS"] ,
+    "boolean": true,
+    "rien":null
+}

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Ajax
+      - Ready State => Status Of The Request
+      [0] Request Not Initialized
+      [1] Server Connection Established
+      [2] Request Received / Demande reçue
+      [3] Processing Request / Traitement de la demande
+      [4] Request Is Finished And Response Is Ready
+      - Status
+      [200] Response Is Successful
+      [404] Not Found
+    */
+   let req = new XMLHttpRequest() ; 
+   req.open("GET","https://api.github.com/users/elmehdi05tabi") ;
+   req.send() ; 
+//    console.log(req) ; 
+   req.onreadystatechange = function () {
+//    console.log(req.readyState);
+//    console.log(req.status);
+   if(req.readyState === 4 && req.status === 200){
+    let convirObject = JSON.parse( req.responseText ) ;
+    console.log(convirObject.login) ;   
+   } 
+} 
+    </script>
+</body>
+</html>

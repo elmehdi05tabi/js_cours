@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      Ajax
+      Loop On Data
+    
+      Search
+      - Cross Origin API [CORS]
+      - API Authentication
+    */
+   let req  = new XMLHttpRequest() ; 
+   req.open("GET","https://api.github.com/users/elmehdi05tabi") ; 
+   req.send() ; 
+   req.onreadystatechange  = function () {
+    if(this.readyState === 4 && this.status === 200){
+        let jsData = JSON.parse(req.responseText)  ;
+        console.log(jsData.login) ;     
+        for (let i = 0; i < jsData.length; i++) {
+            let div = document.createElement("div");
+            let repoName = document.createTextNode(jsData[i].login);
+            div.appendChild(repoName);
+            document.body.appendChild(div);
+        }
+    }
+   }
+    </script>
+</body>
+</html>

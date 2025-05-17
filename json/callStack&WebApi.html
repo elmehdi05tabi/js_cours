@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    /*
+      To Understand Ajax, Fetch, Promises
+    
+      Call Stack || Stack Trace
+      -- JavaScript Engine Uses A Call Stack To Manage Execution Contexts
+      -- Mechanism To Make The Interpreter Track Your Calls
+      -- When Function Called It Added To The Stack
+      -- When Function Executed It Removed From The Stack
+      -- After Function Is Finished Executing The Interpreter Continue From The Last Point
+      -- Work Using LIFO Principle => Last In First Out
+      -- Code Execution Is Synchronous.
+      -- Call Stack Detect Web API Methods And Leave It To The Browser To Handle It
+    
+      Web API
+      -- Methods Available From The Environment => Browser
+    */
+    setTimeout(()=>console.log("Web Api"),0) ; 
+    function One () {
+        console.log("One"); 
+    }
+    function Two() {
+        One() ;
+        console.log("Two"); 
+    }
+    function Three() {
+        Two() ; 
+        console.log("Three"); 
+    }
+    Three() ; 
+// Last In First One 
+console.log("####") ; 
+console.log("one") ; 
+console.log("two") ; 
+console.log("three") ; 
+ </script>
+</body>
+</html>
